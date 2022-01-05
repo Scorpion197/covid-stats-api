@@ -2,6 +2,7 @@ import requests
 #image link
 #https://image.freepik.com/free-vector/fighting-against-coronavirus-concept-illustration_114360-1779.jpg
 from bs4 import BeautifulSoup
+
 class Scrapper:
 
     def __init__(self):
