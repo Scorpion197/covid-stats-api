@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 
 import os
 
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "your_project.settings")
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -37,8 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'covidAPI', 
-    'rest_framework', 
+    'covidAPI',
+    'rest_framework',
     'corsheaders',
 ]
 
@@ -74,7 +75,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'backend.wsgi.application'
 
-CORS_ALLOWED_ORIGINS = [ 
+CORS_ALLOWED_ORIGINS = [
 
     'http://localhost:3000',
 
@@ -82,7 +83,7 @@ CORS_ALLOWED_ORIGINS = [
 
 CORS_ALLOW_METHODS = [
 
-    'POST', 
+    'POST',
     'GET',
 ]
 # Database
@@ -92,10 +93,10 @@ DATABASES = {
     'default': {
 
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'scorpion197', 
-        'USER': 'scorpion', 
-        'PASSWORD': 'scorpion', 
-        'HOST': 'localhost', 
+        'NAME': 'scorpion197',
+        'USER': 'scorpion',
+        'PASSWORD': 'scorpion',
+        'HOST': 'localhost',
         'PORT': '5432'
     }
 }
