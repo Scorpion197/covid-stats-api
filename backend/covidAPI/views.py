@@ -9,5 +9,5 @@ def test_scrapper(request):
     scrap.extract()
     scrap.process()
     data = scrap.get_results()
-    print(data[10])
+    print(data[8])
     return HttpResponse("hello")
