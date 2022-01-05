@@ -10,3 +10,8 @@ docker-compose build
 docker-compose up
 ```
 # Available endpoints
+
+```
+http://localhost:8000/api/allcountries
+http://localhost:8000/api/getcountry/?country_name=COUNTRY_NAME
+```
