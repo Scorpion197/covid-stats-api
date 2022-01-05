@@ -15,3 +15,6 @@ docker-compose up
 http://localhost:8000/api/allcountries
 http://localhost:8000/api/getcountry/?country_name=COUNTRY_NAME
 ```
+
+# To do 
+Deploy on heroku
