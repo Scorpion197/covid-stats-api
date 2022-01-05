@@ -1,5 +1,9 @@
 version: "3"
 
+volumes:
+  dbdata:
+    external: true
+    
 services:
 
   backend:
@@ -10,7 +14,7 @@ services:
       context: ./backend
     command: gunicorn backend.wsgi
     ports:
-      - "8000":"8000"
+      - "8000:8000"
 
   db:
 
@@ -19,3 +23,5 @@ services:
     image: postgres:latest
     ports:
       - "5432:5432"
+    volumes:
+      - dbdata:/var/lib/postgresql/data
